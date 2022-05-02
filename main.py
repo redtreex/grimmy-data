@@ -101,7 +101,7 @@ def upload_file():
         return render_template('file-down-dash.html')
 
 
-@app.route('/download_result_file', methods=['GET'])
+@app.route('/download_result_file', methods=['GET','POST'])
 def download_result_file():
     if request.method == 'GET':
         resp = make_response(result_file.to_csv())
@@ -110,9 +110,9 @@ def download_result_file():
         return resp
 
 
-@app.route('/download_result_file_desc', methods=['GET'])
+@app.route('/download_result_file_desc', methods=['GET', 'POST'])
 def download_result_desc_file():
-    if request.method == 'GET':
+    if request.method == 'GET' or request.method == 'POST':
         resp = make_response(result_file_desc.to_csv())
         resp.headers["Content-Disposition"] = "attachment; filename=file_statistics.csv"
         resp.headers["Content-Type"] = "text/csv"
