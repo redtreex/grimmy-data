@@ -59,9 +59,9 @@ def upload_file():
         <div id="link-div">
             <div id="link-wrapper">
                 <!-- Back to dashboard URL -->
-                <a href="http://localhost/recent/pages/file-up-dash.php">Back</a>
+                <a href="http://grimydata.epizy.com/pages/file-up-dash.php">Back</a>
                 <!-- Logout to Login Page -->
-                <a href="http://localhost/recent/pages/logout.php">Log out</a>
+                <a href="http://grimydata.epizy.com/pages/logout.php">Log out</a>
             </div>
         </div>
     </header>
@@ -72,14 +72,14 @@ def upload_file():
                 <h4>Statistical Informations of the file(s)</h2>
                     <!-- Download button for the table -->
                     <!-- Download Result file description api  -->
-                    <a href="http://127.0.0.1:5002/download_result_file_desc"><button>Download</button></a>
+                    <a href="https://grimy-data.herokuapp.com/download_result_file_desc"><button>Download</button></a>
             </div>"""
         second_half = """</div>
         <div id="download-div">
             <h3>Your File is Ready To Download</h3>
             <!-- Final Download Button -->
             <!-- Download file api location -->
-            <a href="http://127.0.0.1:5002/download_result_file"><button id="download-btn">Download</button></a>
+            <a href="https://grimy-data.herokuapp.com/download_result_file"><button id="download-btn">Download</button></a>
         </div>
     </div>
 
