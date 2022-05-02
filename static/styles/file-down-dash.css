@@ -1,0 +1,109 @@
+@import url("./utils.css");
+
+body{
+    background-color: #EEE;
+    font-family: var(--font-roboto--);
+    overflow: hidden;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+#table-div{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    max-width: 75%;
+    border: 10px solid var(--navy-blue--);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#table-meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 0px 30px;
+}
+
+#table-meta h4{
+    font-weight: 500;
+}
+
+#table-meta button{
+    width: 100px;
+    height: 30px;
+    color: var(--bg--);
+    background-color: var(--navy-blue--);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#table-meta button:hover{
+    color: var(--navy-blue--);
+    background-color: var(--blue--);
+    border-color: var(--navy-blue--);
+    transition: 0.2s;
+}
+
+#table-desc{
+    border: 0;
+}
+
+th{
+    font-weight: 500;
+    color: white;
+    background-color: var(--navy-blue--);
+    padding: 11px 30px;
+    text-align: center;
+}
+td{
+    text-align: center;
+    font-size: 15px;
+}
+
+tr:nth-child(even){
+    background-color: var(--blue--);
+}
+#download-div{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-div h3{
+    font-size: 30px;
+    font-family: var(--font-Roboto--);
+    color: var(--navy-blue--);
+}
+
+#download-btn{
+    height: 50px;
+    width: 200px;
+    border: 2px solid var(--blue--);
+    border-radius: 10px;
+    color: var(--bg--);
+    background-color: var(--navy-blue--);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 5px 20px 5px;
+    padding: 0;
+    transition: 0.2s;
+}
+
+#download-btn:hover{
+    color: var(--navy-blue--);
+    background-color: var(--blue--);
+    border-color: var(--navy-blue--);
+}
+
+
+

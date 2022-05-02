@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/file-down-dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../static/img/favicon.png" type="image/png">
+    <title>Grimy Data</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-text-div">
+            <a href="http://localhost/recent/pages/file-up-dash.php">Grimy<span>Data</span></a>
+        </div>
+        <div id="link-div">
+            <div id="link-wrapper">
+                <!-- Back to dashboard URL -->
+                <a href="http://localhost/recent/pages/file-up-dash.php">Back</a>
+                <!-- Logout to Login Page -->
+                <a href="http://localhost/recent/pages/logout.php">Log out</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="table-div">
+            <div id="table-meta">
+                <h4>Statistical Informations of the file(s)</h2>
+                    <!-- Download button for the table -->
+                    <!-- Download Result file description api  -->
+                    <a href="http://127.0.0.1:5002/download_result_file_desc"><button>Download</button></a>
+            </div>
+<table border="0" class="dataframe" id="desc-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>age_approx</th>
+      <th>target</th>
+      <th>tfrecord</th>
+      <th>width</th>
+      <th>height</th>
+      <th>patient_code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>32531.000</td>
+      <td>32531.000</td>
+      <td>32531.000</td>
+      <td>32531.000</td>
+      <td>32531.000</td>
+      <td>32531.000</td>
+      <td>32531.000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>16561.036</td>
+      <td>0.544</td>
+      <td>0.018</td>
+      <td>0.527</td>
+      <td>0.631</td>
+      <td>0.396</td>
+      <td>0.359</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>9563.948</td>
+      <td>0.160</td>
+      <td>0.132</td>
+      <td>0.293</td>
+      <td>0.395</td>
+      <td>0.262</td>
+      <td>0.258</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>8280.500</td>
+      <td>0.444</td>
+      <td>0.000</td>
+      <td>0.267</td>
+      <td>0.230</td>
+      <td>0.104</td>
+      <td>0.134</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>16549.000</td>
+      <td>0.556</td>
+      <td>0.000</td>
+      <td>0.533</td>
+      <td>0.848</td>
+      <td>0.539</td>
+      <td>0.323</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>24842.500</td>
+      <td>0.667</td>
+      <td>0.000</td>
+      <td>0.800</td>
+      <td>1.000</td>
+      <td>0.638</td>
+      <td>0.542</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>33125.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        <div id="download-div">
+            <h3>Your File is Ready To Download</h3>
+            <!-- Final Download Button -->
+            <!-- Download file api location -->
+            <a href="http://127.0.0.1:5002/download_result_file"><button id="download-btn">Download</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>2022 All rights reserved | CSE391</p>
+    </footer>
+
+</body>
+
+</html>

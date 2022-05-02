@@ -1,0 +1,87 @@
+:root{
+    --bg--:#EFFFFD;
+    --blue--:#42C2FF;
+    --navy-blue--:#082032;
+    --light-blue--:#85F4FF;
+    --grey--:#D3DEDC;
+    --font-roboto--:'Roboto', sans-serif;
+    --font-archivo--:'Archivo Black', sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header div */
+header{
+    background-color: var(--navy-blue--);
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+
+/* logo text div */
+#logo-text-div{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+
+    font-family: var(--font-archivo--);
+    font-size: 40px;
+}
+#logo-text-div a{
+    text-decoration: none;
+    color: #EEE;
+}
+
+#logo-text-div a span{
+    color: var(--blue--);
+}
+
+/*top button div */
+
+#link-div {
+    position: absolute;
+    right: 200px;
+    top: 40px;
+    font-family: var(--font-roboto--);
+    font-size: 18px;
+
+}
+
+#link-wrapper a {
+    text-decoration: none;
+    border: 2px solid var(--blue--);
+    padding: 15px 25px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color: white;
+    transition: 0.2s;
+}
+
+#link-wrapper a:hover {
+    background-color: white;
+    border-color: white;
+    color: var(--blue--);
+    transition: 0.2s;
+}
+
+
+/* Footer */
+
+footer{
+    position: sticky;
+    bottom: 0px;
+    height: 80px;
+    background-color: var(--navy-blue--);
+}
+
+footer p{
+    text-align: center;
+    color: #EEE;
+    font-family: var(--font-roboto--);
+    padding-top: 30px;
+}
