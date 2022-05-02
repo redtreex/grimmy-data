@@ -103,7 +103,7 @@ def upload_file():
 
 @app.route('/download_result_file', methods=['GET','POST'])
 def download_result_file():
-    if request.method == 'GET':
+    if request.method == 'GET' or request.method == 'POST':
         resp = make_response(result_file.to_csv())
         resp.headers["Content-Disposition"] = "attachment; filename=cleaned_file.csv"
         resp.headers["Content-Type"] = "text/csv"
